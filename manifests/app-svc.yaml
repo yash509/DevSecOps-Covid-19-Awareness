@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: covid-19-awarness-website-service
+spec:
+  selector:
+    app: covid-19-awarness
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+  type: LoadBalancer
