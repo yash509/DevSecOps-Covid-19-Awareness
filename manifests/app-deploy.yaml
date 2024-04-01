@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: covid-19-awareness-website-deployment
+spec:
+  replicas: 2 # You can adjust the number of replicas as needed
+  selector:
+    matchLabels:
+      app: covid-19-awareness
+  template:
+    metadata:
+      labels:
+        app: covid-19-awareness
+    spec:
+      containers:
+        - name: covid-19-awareness
+          image: yash5090/covid-19-awareness:latest # Replace with the actual image tag
+          ports:
+            - containerPort: 8000 # Replace with the port your Tetris game listens on
