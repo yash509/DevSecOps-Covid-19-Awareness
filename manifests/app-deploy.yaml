@@ -16,4 +16,4 @@ spec:
         - name: covid-19-awareness
           image: yash5090/covid-19-awareness:latest # Replace with the actual image tag
           ports:
-            - containerPort: 8000 # Replace with the port your Tetris game listens on
+            - containerPort: 5000 # Replace with the port your Tetris game listens on
