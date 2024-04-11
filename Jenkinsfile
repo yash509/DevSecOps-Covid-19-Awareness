@@ -222,7 +222,7 @@ pipeline {
         stage('Deploy to Docker Container'){
             steps{
                 //dir('BMI Calculator (JS)') {
-                    sh 'docker run -d --name covid-19-awareness -p 5000:5000 yash5090/covid-19-awareness:latest' 
+                    sh 'docker run -d --name covid-19-awareness -p 5000:80 yash5090/covid-19-awareness:latest' 
                 //}
             }
         }
